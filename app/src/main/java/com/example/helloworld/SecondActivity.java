@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.widget.Toast;
+
 import com.example.helloworld.TimeUtils;
 
 public class SecondActivity extends AppCompatActivity {
@@ -35,10 +37,10 @@ public class SecondActivity extends AppCompatActivity {
             // ...add more as needed
         }
 
-        if (keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+        if (KeyMapHelper.isBackKey(keyCode)) {
             Log.i(TAG, TimeUtils.getTimestamp() + " - Back button pressed");
             // Custom behavior for Back button
-            android.widget.Toast.makeText(this, "Back button pressed!", android.widget.Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Back button pressed!", android.widget.Toast.LENGTH_SHORT).show();
             finish(); // Optional: return to MainActivity
             return true; // You handled it
         }
