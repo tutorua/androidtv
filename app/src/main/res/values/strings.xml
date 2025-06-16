@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="hello_android_5_1">Hello from TV Box T95N on Android 5.1!</string>
+    <string name="the_second_screen">You made it to the second screen!</string>
+    <string name="back_2nd_screen">Back</string>
+    <string name="next">Next</string>
+</resources>
